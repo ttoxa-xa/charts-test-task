@@ -16,6 +16,9 @@
 		B9187FCB2136FAA6005B42C4 /* TickersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FCA2136FAA6005B42C4 /* TickersService.swift */; };
 		B9187FD521383332005B42C4 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FD421383332005B42C4 /* Ticker.swift */; };
 		B9187FD9213836D7005B42C4 /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FD8213836D7005B42C4 /* ExtensionArray.swift */; };
+		B9187FDC21383A42005B42C4 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FDB21383A42005B42C4 /* ChartController.swift */; };
+		B9187FDE21383A72005B42C4 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FDD21383A72005B42C4 /* ChartView.swift */; };
+		B9187FE121383C43005B42C4 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FE021383C43005B42C4 /* ChartViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		B9187FCA2136FAA6005B42C4 /* TickersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersService.swift; sourceTree = "<group>"; };
 		B9187FD421383332005B42C4 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		B9187FD8213836D7005B42C4 /* ExtensionArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionArray.swift; sourceTree = "<group>"; };
+		B9187FDB21383A42005B42C4 /* ChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
+		B9187FDD21383A72005B42C4 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		B9187FE021383C43005B42C4 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,8 @@
 		B9187FD221383294005B42C4 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
+				B9187FDF21383C38005B42C4 /* ViewModel */,
+				B9187FDA21383A37005B42C4 /* UI */,
 				B9187FD32138329C005B42C4 /* Model */,
 			);
 			path = Charts;
@@ -143,6 +151,23 @@
 				B9187FD421383332005B42C4 /* Ticker.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B9187FDA21383A37005B42C4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B9187FDB21383A42005B42C4 /* ChartController.swift */,
+				B9187FDD21383A72005B42C4 /* ChartView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B9187FDF21383C38005B42C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B9187FE021383C43005B42C4 /* ChartViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +301,9 @@
 				B9187FC32136D1E9005B42C4 /* ApiClient.swift in Sources */,
 				B9187FC82136DE65005B42C4 /* ExtensionDictionary.swift in Sources */,
 				B9187FD9213836D7005B42C4 /* ExtensionArray.swift in Sources */,
+				B9187FE121383C43005B42C4 /* ChartViewModel.swift in Sources */,
+				B9187FDC21383A42005B42C4 /* ChartController.swift in Sources */,
+				B9187FDE21383A72005B42C4 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

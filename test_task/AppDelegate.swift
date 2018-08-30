@@ -12,13 +12,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let service = TickerService()
-
-
+  
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        service.tickers().subscribe(onNext: { ticker in
-            print(ticker)
-        })
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = ChartController()
+        window?.makeKeyAndVisible()
         return true
     }
 }
