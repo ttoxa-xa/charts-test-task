@@ -13,6 +13,9 @@
 		B90CC4BB2136C389004AEB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90CC4B92136C389004AEB48 /* LaunchScreen.storyboard */; };
 		B9187FC32136D1E9005B42C4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FC22136D1E9005B42C4 /* ApiClient.swift */; };
 		B9187FC82136DE65005B42C4 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FC72136DE65005B42C4 /* ExtensionDictionary.swift */; };
+		B9187FCB2136FAA6005B42C4 /* TickersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FCA2136FAA6005B42C4 /* TickersService.swift */; };
+		B9187FD521383332005B42C4 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FD421383332005B42C4 /* Ticker.swift */; };
+		B9187FD9213836D7005B42C4 /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9187FD8213836D7005B42C4 /* ExtensionArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		B90CC4BC2136C389004AEB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9187FC22136D1E9005B42C4 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		B9187FC72136DE65005B42C4 /* ExtensionDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDictionary.swift; sourceTree = "<group>"; };
+		B9187FCA2136FAA6005B42C4 /* TickersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersService.swift; sourceTree = "<group>"; };
+		B9187FD421383332005B42C4 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		B9187FD8213836D7005B42C4 /* ExtensionArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		B90CC4AF2136C387004AEB48 /* test_task */ = {
 			isa = PBXGroup;
 			children = (
+				B9187FCF2138327E005B42C4 /* Stories */,
 				B9187FC42136DE3C005B42C4 /* Extensions */,
 				B9187FC12136D1CC005B42C4 /* Networking */,
 				B90CC4B02136C387004AEB48 /* AppDelegate.swift */,
@@ -91,6 +98,7 @@
 		B9187FC12136D1CC005B42C4 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				B9187FC92136FA8E005B42C4 /* Services */,
 				B9187FC22136D1E9005B42C4 /* ApiClient.swift */,
 			);
 			path = Networking;
@@ -100,8 +108,41 @@
 			isa = PBXGroup;
 			children = (
 				B9187FC72136DE65005B42C4 /* ExtensionDictionary.swift */,
+				B9187FD8213836D7005B42C4 /* ExtensionArray.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B9187FC92136FA8E005B42C4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B9187FCA2136FAA6005B42C4 /* TickersService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B9187FCF2138327E005B42C4 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				B9187FD221383294005B42C4 /* Charts */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		B9187FD221383294005B42C4 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				B9187FD32138329C005B42C4 /* Model */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		B9187FD32138329C005B42C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9187FD421383332005B42C4 /* Ticker.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B90CC4B12136C387004AEB48 /* AppDelegate.swift in Sources */,
+				B9187FCB2136FAA6005B42C4 /* TickersService.swift in Sources */,
+				B9187FD521383332005B42C4 /* Ticker.swift in Sources */,
 				B9187FC32136D1E9005B42C4 /* ApiClient.swift in Sources */,
 				B9187FC82136DE65005B42C4 /* ExtensionDictionary.swift in Sources */,
+				B9187FD9213836D7005B42C4 /* ExtensionArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

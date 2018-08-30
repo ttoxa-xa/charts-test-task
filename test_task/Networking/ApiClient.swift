@@ -15,7 +15,6 @@ struct ApiClient {
     static let shared = ApiClient()
     private let socketHost = "wss://api.bitfinex.com/ws"
     private let webSoсket: WebSocket
-    private let disposeBag = DisposeBag()
     
     init() {
         /// тут можно и упасть, так как подразумевается, что url должен быть всегда правильный
@@ -36,5 +35,9 @@ struct ApiClient {
     
     func write(parameters: [String: Any]) -> Observable<Void> {
         return webSoсket.rx.write(string: parameters.jsonString() ?? "")
+    }
+    
+    func listen() -> Observable<String> {
+        return webSoсket.rx.text
     }
 }
